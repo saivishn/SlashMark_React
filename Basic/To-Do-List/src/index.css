@@ -1,0 +1,97 @@
+/* src/index.css */
+
+/* Reset some default styles for consistency */
+body,
+h1,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Apply some basic styles to the app container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px; /* Larger font size */
+  margin-bottom: 24px; /* Increased margin */
+}
+
+/* Style the input for adding tasks */
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 8px; /* Rounded corners */
+  margin: 16px;
+  width: 300px; /* Ensure a consistent width */
+  outline: none; /* Remove outline */
+}
+
+/* Style the button for adding tasks */
+button {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Style the individual task items */
+.task {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  margin: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Add styles for completed tasks */
+.task.completed {
+  background-color: #e6e6e6;
+  text-decoration: line-through;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 12px;
+}
+
+/* Style the Remove button */
+.task button {
+  background-color: #79deaf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 16px; /* Increased padding */
+  margin-left: auto; /* Push to the right */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.task button:hover {
+  background-color: #3f1dae; /* Darker shade on hover */
+}
